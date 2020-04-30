@@ -1,5 +1,5 @@
 
-![](https://raw.githubusercontent.com/epykure/epyk-extensions/master/static/images/logo.ico)
+![](https://raw.githubusercontent.com/epykure/epyk-bootstrap/master/epyk_bootstrap/static/images/epyk_bootstrap.ico)
 
 ### Epyk Bootstrap!
 
@@ -13,4 +13,5 @@ This package will make a simple interface between most of the components of Mate
 and Epyk. This addon will allow you to benefit from the two world and to keep write Interactive and modern web pages from Python.
 
 https://getbootstrap.com/
+
 https://eonasdan.github.io/bootstrap-datetimepicker/
