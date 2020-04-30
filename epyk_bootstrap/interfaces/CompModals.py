@@ -25,7 +25,7 @@ class Modals(object):
     :param options:
     :param profile:
     """
-    container = BsHtml.BsModals(self.context.rptObj, component or [], title, width, height, options, profile)
+    container = BsHtml.BsModals(self.context.rptObj, component or [], title, width, height, options or {}, profile)
     self.context.register(container)
     if sizing is not None:
       container.dialog.attr["class"].add("modal-%s" % sizing)
@@ -50,7 +50,7 @@ class Modals(object):
     :param options:
     :param profile:
     """
-    container = BsHtml.BsModals(self.context.rptObj, component or [], title, width, height, options, profile)
+    container = BsHtml.BsModals(self.context.rptObj, component or [], title, width, height, options or {}, profile)
     self.context.register(container)
     if sizing is not None:
       container.dialog.attr["class"].add("modal-%s" % sizing)
@@ -75,7 +75,7 @@ class Modals(object):
     :param options:
     :param profile:
     """
-    container = BsHtml.BsModals(self.context.rptObj, component or [], title, width, height, options, profile)
+    container = BsHtml.BsModals(self.context.rptObj, component or [], title, width, height, options or {}, profile)
     self.context.register(container)
     if sizing is not None:
       container.dialog.attr["class"].add("modal-%s" % sizing)
@@ -104,7 +104,7 @@ class Modals(object):
     :param options:
     :param profile:
     """
-    container = BsHtml.BsModals(self.context.rptObj, component or [], title, width, height, options, profile)
+    container = BsHtml.BsModals(self.context.rptObj, component or [], title, width, height, options or {}, profile)
     self.context.register(container)
     if sizing is not None:
       container.dialog.attr["class"].add("modal-%s" % sizing)
@@ -137,7 +137,7 @@ class Modals(object):
     :param options:
     :param profile:
     """
-    container = BsHtml.BsModals(self.context.rptObj, component or [], title, width, height, options, profile)
+    container = BsHtml.BsModals(self.context.rptObj, component or [], title, width, height, options or {}, profile)
     self.context.register(container)
     if sizing is not None:
       container.dialog.attr["class"].add("modal-%s" % sizing)
