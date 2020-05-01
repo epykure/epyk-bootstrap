@@ -31,13 +31,13 @@ class Report(Page.Report):
     self._bs, self._bs_styles = None, None
 
   @property
-  def style(self):
+  def styles(self):
     """
 
     """
-    if self._bs is None:
-      self._bs = BsStyles.BsStyles(self)
-    return self._bs
+    if self._bs_styles is None:
+      self._bs_styles = BsStyles.BsStyles(self)
+    return self._bs_styles
 
   @property
   def bootstrap(self):

@@ -120,6 +120,7 @@ class Inputs(object):
       ]},
       {"type": 'input', 'class': 'form-control', 'css': None, 'arias': {"describedby": 'basic-addon1'}}
     ]}
+    self.context.rptObj.jsImports.add("popper")
     for v in values:
       schema['children'][0]['children'][2]['children'].append(
         {"type": 'link', 'class': 'dropdown-item', 'css': None, 'args': {"text": v, 'url': '#'}},)
@@ -148,6 +149,7 @@ class Inputs(object):
       ]},
       {"type": 'input', 'class': 'form-control', 'css': None, 'arias': {"describedby": 'basic-addon1'},
        'args': {'text': values}}]}
+    self.context.rptObj.jsImports.add("popper")
     comp = self.context.rptObj.bootstrap.composite(schema, options={"reset_class": True})
     return comp
 

@@ -3,6 +3,7 @@
 class Dropdowns(object):
 
   def __init__(self, context):
+    context.rptObj.jsImports.add("popper")
     self.context = context
 
   def buttons(self, text, values, category="primary"):
