@@ -266,8 +266,8 @@ class BsModals(html.Html.Html):
 
     :param comp:
     """
-    if hasattr(comp, 'inReport'):
-      comp.inReport = False
+    if hasattr(comp, 'options'):
+      comp.options.managed = False
     self.body.__add__(comp)
     return self
 

@@ -17,16 +17,16 @@ class BsDate(html.Html.Html):
     self.input = self._report.ui.inputs.d_text(self.val)
     self.input.style.clear_all()
     self.input.attr['class'].add("form-control")
-    self.input.inReport = False
+    self.input.options.managed = False
 
     self.span = self._report.ui.div()
     self.span.style.clear_all()
     self.span.attr['class'].add("input-group-addon")
-    self.span.inReport = False
+    self.span.options.managed = False
 
     icon = self._report.ui.texts.span('Text')
     icon.style.clear_all()
-    icon.inReport = False
+    icon.options.managed = False
 
     self.span += icon
 

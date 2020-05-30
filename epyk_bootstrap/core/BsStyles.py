@@ -31,7 +31,7 @@ class BsStyles(object):
     :param style: String the css style to be replaced
     :param new_style: String. The new CSS Style to be added (multiple should be a string with spaces)
     """
-    for v in self._report.htmlItems.values():
+    for v in self._report.components.values():
       if style in v.attr['class']:
         if new_style is None:
           v.attr['class'].discard(style)

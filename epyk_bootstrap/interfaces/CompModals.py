@@ -109,7 +109,7 @@ class Modals(object):
     if sizing is not None:
       container.dialog.attr["class"].add("modal-%s" % sizing)
     self.button = self.context.rptObj.bootstrap.button(event, category=category)
-    self.button.inReport = False
+    self.button.options.managed = False
     self.button.attr["data-dismiss"] = "modal"
     footer = container.footer
     footer += self.button
@@ -145,11 +145,11 @@ class Modals(object):
 
     header = container.header
     closure = self.context.rptObj.bootstrap.buttons.close(dismiss='modal')
-    closure.inReport = False
+    closure.options.managed = False
     header += closure
     footer = container.footer
     for b in events:
       button = self.context.rptObj.bootstrap.button(b, category=category)
-      button.inReport = False
+      button.options.managed = False
       footer += button
     return container
