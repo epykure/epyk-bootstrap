@@ -28,7 +28,6 @@ class Dates(object):
     """
     date = BsDatePicker.BsDate(self.context.rptObj, value, label, icon, htmlCode, profile, options, helper)
     date.options.format = 'YYYY-MM-DD HH:mm:ss'
-    self.context.register(date)
     return date
 
   def date(self, value=None, label="", icon="", htmlCode=None, profile=False, options=None, helper=""):
@@ -52,7 +51,6 @@ class Dates(object):
     """
     date = BsDatePicker.BsDate(self.context.rptObj, value, label, icon, htmlCode, profile, options, helper)
     date.options.format = 'YYYY-MM-DD'
-    self.context.register(date)
     return date
 
   def today(self, label="", icon="", htmlCode=None, profile=False, options=None, helper=""):
@@ -76,7 +74,6 @@ class Dates(object):
     value = self.context.rptObj.py.dates.today
     date = BsDatePicker.BsDate(self.context.rptObj, value, label, icon, htmlCode, profile, options, helper)
     date.options.format = 'YYYY-MM-DD'
-    self.context.register(date)
     return date
 
   def cob(self, label="", icon="", htmlCode=None, profile=False, options=None, helper=""):
@@ -100,7 +97,6 @@ class Dates(object):
     value = self.context.rptObj.py.dates.cob
     date = BsDatePicker.BsDate(self.context.rptObj, value, label, icon, htmlCode, profile, options, helper)
     date.options.format = 'YYYY-MM-DD'
-    self.context.register(date)
     return date
 
   def time(self, value=None, label="", icon="", htmlCode=None, profile=False, options=None, helper=""):
@@ -124,5 +120,4 @@ class Dates(object):
     """
     date = BsDatePicker.BsDate(self.context.rptObj, value, label, icon, htmlCode, profile, options, helper)
     date.options.format = 'LT'
-    self.context.register(date)
     return date

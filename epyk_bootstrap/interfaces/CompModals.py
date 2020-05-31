@@ -26,7 +26,6 @@ class Modals(object):
     :param profile:
     """
     container = BsHtml.BsModals(self.context.rptObj, component or [], title, width, height, options or {}, profile)
-    self.context.register(container)
     if sizing is not None:
       container.dialog.attr["class"].add("modal-%s" % sizing)
     return container
@@ -51,7 +50,6 @@ class Modals(object):
     :param profile:
     """
     container = BsHtml.BsModals(self.context.rptObj, component or [], title, width, height, options or {}, profile)
-    self.context.register(container)
     if sizing is not None:
       container.dialog.attr["class"].add("modal-%s" % sizing)
     return container
@@ -76,7 +74,6 @@ class Modals(object):
     :param profile:
     """
     container = BsHtml.BsModals(self.context.rptObj, component or [], title, width, height, options or {}, profile)
-    self.context.register(container)
     if sizing is not None:
       container.dialog.attr["class"].add("modal-%s" % sizing)
     container.attr['data-backdrop'] = "static"
@@ -105,7 +102,6 @@ class Modals(object):
     :param profile:
     """
     container = BsHtml.BsModals(self.context.rptObj, component or [], title, width, height, options or {}, profile)
-    self.context.register(container)
     if sizing is not None:
       container.dialog.attr["class"].add("modal-%s" % sizing)
     self.button = self.context.rptObj.bootstrap.button(event, category=category)
@@ -138,7 +134,6 @@ class Modals(object):
     :param profile:
     """
     container = BsHtml.BsModals(self.context.rptObj, component or [], title, width, height, options or {}, profile)
-    self.context.register(container)
     if sizing is not None:
       container.dialog.attr["class"].add("modal-%s" % sizing)
     self.buttons = []

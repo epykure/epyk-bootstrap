@@ -242,7 +242,6 @@ class Bootstrap(object):
     container = BsHtml.BsCards(self.rptObj, component or [], title, width, height, options, profile)
     container.style.clear_all()
     container.attr["class"].add("card")
-    self.register(container)
     return container
 
   def toast(self, component=None, title=None, width=(100, "%"), height=(None, "px"), options=None, profile=False):
@@ -253,7 +252,6 @@ class Bootstrap(object):
     if component is not None and not isinstance(component, list):
       component = [component]
     h_toast = BsHtml.BsToasts(self.rptObj, component or [], title, width, height, options, profile)
-    self.register(h_toast)
     return h_toast
 
   def alert(self, test, dismissing=True, category='primary'):
@@ -311,7 +309,6 @@ class Bootstrap(object):
     :param profile: Optional. Not yet available
     """
     html_help = BsHtml.BsComposite(self.rptObj, schema, width=width, height=height, htmlCode=htmlCode, profile=profile, options=options or {}, helper=helper)
-    self.register(html_help)
     return html_help
 
   def spinner(self, category='primary', grow=False):
@@ -339,17 +336,3 @@ class Bootstrap(object):
     span.attr["class"].add("sr-only")
     return container
 
-  def register(self, html_comp):
-    """
-    Description:
-    ------------
-    Internal function to register a HTML component based on its memory id.
-
-    Related Pages:
-
-    :param html_comp: The html component
-
-    return the html component
-    """
-    self.rptObj.components[id(html_comp)] = html_comp
-    return html_comp
