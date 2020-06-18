@@ -1,5 +1,5 @@
 
-![](./epyk_bootstrap/static/images/logo.PNG)
+<img width=100 src="https://github.com/epykure/epyk-bootstrap/raw/master/epyk_bootstrap/static/images/logo.PNG">
 
 ### Epyk with Bootstrap!
 
