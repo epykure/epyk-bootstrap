@@ -5,6 +5,7 @@ from epyk.core.js.primitives import JsObjects
 
 
 class Modal(JsHtml.JsHtmlRich):
+  name = "Bootstrap Modal"
 
   def toggle(self):
     """

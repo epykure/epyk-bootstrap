@@ -7,6 +7,7 @@ from epyk_bootstrap.core import BsOptions
 
 class BsDate(html.Html.Html):
   __reqCss, __reqJs = ['bootstrap-datetimepicker'], ['bootstrap-datetimepicker']
+  name = 'Bootstrap Name'
 
   def __init__(self, report, value, label, icon, htmlCode, profile, options, helper):
     super(BsDate, self).__init__(report, value, htmlCode=htmlCode, profile=profile)

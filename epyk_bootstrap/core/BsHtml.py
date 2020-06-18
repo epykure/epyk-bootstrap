@@ -4,6 +4,7 @@ from epyk_bootstrap.core import BsDom
 
 
 class BsComposite(html.HtmlTextComp.Composite):
+  name = "Bootstrap Composite"
 
   extended_map = None
 
@@ -28,6 +29,7 @@ class BsComposite(html.HtmlTextComp.Composite):
 
 
 class Section(html.Html.Html):
+  name = "Bootstrap Section"
 
   def __init__(self, report, type, data=None, options=None, profile=None):
     super(Section, self).__init__(report, [])
@@ -72,6 +74,7 @@ class Section(html.Html.Html):
 
 
 class BsToasts(html.Html.Html):
+  name = "Bootstrap Toasts"
 
   def __init__(self, report, components, title, width, height, options, profile):
     super(BsToasts, self).__init__(report, [], profile=profile)
@@ -145,6 +148,7 @@ class BsToasts(html.Html.Html):
 
 
 class BsCards(html.Html.Html):
+  name = "Bootstrap Card"
 
   def __init__(self, report, components, title, width, height, options, profile):
     super(BsCards, self).__init__(report, [], profile=profile)
@@ -224,7 +228,8 @@ class BsCards(html.Html.Html):
 
 
 class BsModals(html.Html.Html):
-
+  name = "Bootstrap Modals"
+  
   def __init__(self, report, components, title, width, height, options, profile):
     super(BsModals, self).__init__(report, [])
     self.style.clear_all()
