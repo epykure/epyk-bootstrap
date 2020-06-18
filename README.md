@@ -1,10 +1,11 @@
 
-![](https://raw.githubusercontent.com/epykure/epyk-bootstrap/master/epyk_bootstrap/static/images/epyk_bootstrap.ico)
+![](./epyk_bootstrap/static/images/logo.PNG)
 
 ### Epyk with Bootstrap!
 
 
 An easy way to use Epyk with the Bootstrap extension.
+![](https://raw.githubusercontent.com/epykure/epyk-bootstrap/master/epyk_bootstrap/static/images/epyk_bootstrap.ico)
 
 
 Presentation
